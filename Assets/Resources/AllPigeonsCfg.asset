@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a99878a2b46ba748afb59f55000c489, type: 3}
+  m_Name: AllPigeonsCfg
+  m_EditorClassIdentifier: 
+  _pigeonPrefabs:
+  - PigeonMain: {fileID: 7132870551033196458, guid: 58a70b466116bc34a84a8aa9369f4ac4, type: 3}
+    AvailableBomb: {fileID: 5819746681572970475, guid: b29d4581acbd96f4a9a290572cfc9f2d, type: 3}
+  - PigeonMain: {fileID: 7132870551033196458, guid: 87f32056f64bfde4a90a0a40321c20b2, type: 3}
+    AvailableBomb: {fileID: 2356113777940966108, guid: 72e4231d6cee18b4185e953e2ea00bfa, type: 3}
+  - PigeonMain: {fileID: 7132870551033196458, guid: d957759ffec56bb49ac1dd0627067395, type: 3}
+    AvailableBomb: {fileID: 3876616620075602363, guid: 5d2a1b161bea6964d864543e557c82d8, type: 3}
+  - PigeonMain: {fileID: 7132870551033196458, guid: 25591e3e00b013f42b77247f9e0c29da, type: 3}
+    AvailableBomb: {fileID: 7892938261046335221, guid: 45556263e8df25a41b55d2749aa84ad7, type: 3}

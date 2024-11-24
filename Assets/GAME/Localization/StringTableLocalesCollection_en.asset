@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringTableLocalesCollection_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: c8578bdb68536c842a05de73b6aaf2cd, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 31555497984
+    m_Localized: hp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123347841024
+    m_Localized: game over!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 286757924864
+    m_Localized: new record!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364801339392
+    m_Localized: record not reached
+    m_Metadata:
+      m_Items: []
+  - m_Id: 623204020224
+    m_Localized: restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 673950904320
+    m_Localized: to main menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7024794054656
+    m_Localized: the same record!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303144631971840
+    m_Localized: play!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303199074037760
+    m_Localized: exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303248449384448
+    m_Localized: record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303301448609792
+    m_Localized: settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303416515145728
+    m_Localized: sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303484538368000
+    m_Localized: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303540842704896
+    m_Localized: language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304199969189888
+    m_Localized: version
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1740834803986432
+    m_Localized: resurrection used
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1741536783675392
+    m_Localized: resurrection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1776528163254272
+    m_Localized: continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2918458888728576
+    m_Localized: wait
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3242377323655168
+    m_Localized: offline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12933817721073664
+    m_Localized: store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12933918535364608
+    m_Localized: chose a pigeon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12934071015092224
+    m_Localized: back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12934187704823808
+    m_Localized: leaders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12941473701605376
+    m_Localized: scores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12941529792032768
+    m_Localized: meters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13019210835472384
+    m_Localized: standard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13019275918487552
+    m_Localized: triple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13019364032425984
+    m_Localized: bursting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13019454088327168
+    m_Localized: homing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13323626088148992
+    m_Localized: coins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14108979942305792
+    m_Localized: default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14109078445535232
+    m_Localized: triple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14109135563567104
+    m_Localized: bursting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14109242740617216
+    m_Localized: homing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14797774807281664
+    m_Localized: error try again
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

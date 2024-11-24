@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: StringTableLocalesCollection Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: StringTableLocalesCollection
+  m_TableCollectionNameGuidString: c8578bdb68536c842a05de73b6aaf2cd
+  m_Entries:
+  - m_Id: 31555497984
+    m_Key: health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123347841024
+    m_Key: go_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 286757924864
+    m_Key: go_new_record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364801339392
+    m_Key: go_no_new_record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 623204020224
+    m_Key: go_restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 673950904320
+    m_Key: go_to_main_menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7024794054656
+    m_Key: go_record_same
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303144631971840
+    m_Key: mm_play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303199074037760
+    m_Key: mm_exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303248449384448
+    m_Key: mm_record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303301448609792
+    m_Key: mm_settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303416515145728
+    m_Key: mm_sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303484538368000
+    m_Key: mm_music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303540842704896
+    m_Key: mm_language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304199969189888
+    m_Key: mm_version
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1740834803986432
+    m_Key: go_resurrection_used
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1741536783675392
+    m_Key: go_resurrection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1776528163254272
+    m_Key: go_continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2918458888728576
+    m_Key: go_resurrection_loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3242377323655168
+    m_Key: pgs_user_offline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12933817721073664
+    m_Key: mm_store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12933918535364608
+    m_Key: mm_chose_pigeon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12934071015092224
+    m_Key: mm_back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12934187704823808
+    m_Key: mm_leaders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12941473701605376
+    m_Key: mm_scores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12941529792032768
+    m_Key: mm_meters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13019210835472384
+    m_Key: mm_pigeon_type_standard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13019275918487552
+    m_Key: mm_pigeon_type_blue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13019364032425984
+    m_Key: mm_pigeon_type_bursting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13019454088327168
+    m_Key: mm_pigeon_type_homing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13323626088148992
+    m_Key: mm_coins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14108979942305792
+    m_Key: st_pigeon_default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14109078445535232
+    m_Key: st_pigeon_triple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14109135563567104
+    m_Key: st_pigeon_bursting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14109242740617216
+    m_Key: st_pigeon_homing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14797774807281664
+    m_Key: go_resurrection_failed
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1612629824095387672
+  references:
+    version: 2
+    RefIds:
+    - rid: 1612629824095387672
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1728832827537
