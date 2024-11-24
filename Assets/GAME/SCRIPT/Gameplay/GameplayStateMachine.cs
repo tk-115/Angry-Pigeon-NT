@@ -5,8 +5,9 @@ public class GameplayStateMachine : IStateSwicher {
     private List<IState> _allStates;
     private IState _currentState;
 
-    public GameplayStateMachine(IStateSwicher gameStateSwicher, PigeonMain pigeonMain, 
+    public GameplayStateMachine(GameStateMachine gameStateSwicher, PigeonMain pigeonMain, 
         GameplayView gameplayView, LevelGenerator levelGenerator, ScoresControll scoresControll, AdsManager adsManager) {
+        
         _allStates = new List<IState>() {
             new GameplayMainState(this, pigeonMain, gameplayView),
             new PauseState(this, gameStateSwicher, pigeonMain, gameplayView, levelGenerator, scoresControll),

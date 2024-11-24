@@ -1,22 +1,19 @@
 ﻿using UnityEngine;
 
 public class ScoresControll : MonoBehaviour {
-
     [SerializeField] private GameplayView _gameplayView;
     [SerializeField] private PlayerData _playerData;
 
     private int _score = 0;
     private int _coin = 0;
     private int _meters = 0;
+    private int _multiplier = 1;
 
-    private int multiplier = 1;
-
-    public void SetMultiplierActive() => multiplier = 2;
-
-    public void SetMultiplierDefault() => multiplier = 1;
+    public void SetMultiplierActive() => _multiplier = 2;
+    public void SetMultiplierDefault() => _multiplier = 1;
 
     public void AddScore(int value) {
-        _score += value * multiplier;
+        _score += value * _multiplier;
         _gameplayView.SetScores(_score);
     }
 
@@ -40,7 +37,7 @@ public class ScoresControll : MonoBehaviour {
     }
 
     public void AddCoin() {
-        _coin += multiplier;
+        _coin += _multiplier;
         _gameplayView.SetCoins(_coin);
     }
 
@@ -68,5 +65,4 @@ public class ScoresControll : MonoBehaviour {
         if (newRecord == true) _playerData.SaveData();
         return newRecord;
     }
-
 }

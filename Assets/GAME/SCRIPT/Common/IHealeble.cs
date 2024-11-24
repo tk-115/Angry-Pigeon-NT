@@ -1,4 +1,3 @@
-public interface IHealeble
-{
+public interface IHealeble {
     void Heal();
 }

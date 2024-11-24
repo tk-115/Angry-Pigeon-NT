@@ -6,7 +6,6 @@ public class Pedestrian : MonoBehaviour {
     [Inject] private ScoresControll _scoresControll;
 
     [SerializeField] private PedestrianView _pedestrianView;
-
     [SerializeField] private int _forHitScores;
     [SerializeField] private int _forDeadScores;
 
@@ -42,5 +41,4 @@ public class Pedestrian : MonoBehaviour {
         _scoresControll.AddScore(ForDeadScores);
         _pedestrianStateMachine.SwitchState<PedestrianDeadState>();
     }
-    
 }

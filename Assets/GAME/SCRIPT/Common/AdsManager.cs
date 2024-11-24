@@ -1,6 +1,5 @@
 ﻿using GoogleMobileAds.Api;
 using System;
-using TMPro;
 using UnityEngine;
 
 public class AdsManager : MonoBehaviour {
@@ -9,7 +8,6 @@ public class AdsManager : MonoBehaviour {
     public event Action OnRewarderAdFailed;
 
     public string appId = "ca-app-pub-1573041903763000~4903028889";     // test: "ca-app-pub-3940256099942544~3347511713";
-    //string bannerId = "ca-app-pub-1573041903763000/1180745023";         //test: "ca-app-pub-3940256099942544/6300978111";
     string interId = "ca-app-pub-1573041903763000/8650702200";          // test: "ca-app-pub-3940256099942544/1033173712";
     string rewardedId = "ca-app-pub-1573041903763000/4689779033";       // test: "ca-app-pub-3940256099942544/5224354917";
 

@@ -16,7 +16,8 @@ public class MainMenuState : IState {
     private bool _musicEnabled = false;
     private int _easterEggClick = 0;
 
-    public MainMenuState(IStateSwicher switcher, MainPageView mainMenuView, PlayerData playerData, AudioMixer mixer) {
+    public MainMenuState(IStateSwicher switcher, MainPageView mainMenuView, 
+        PlayerData playerData, AudioMixer mixer) {
         _switcher = switcher;
         _mainMenuView = mainMenuView;
         _playerData = playerData;
@@ -24,6 +25,7 @@ public class MainMenuState : IState {
     }
 
     public void Enter() {
+        //количество кликов по логотипу TK936 обнулить
         _easterEggClick = 0;
 
         //Загрузить самые новые данные о рекордах игрока
@@ -126,7 +128,6 @@ public class MainMenuState : IState {
         var locales = LocalizationSettings.AvailableLocales.Locales;
         var locale = locales[languageID];
         LocalizationSettings.SelectedLocale = locale;
-
     }
 
     private void OnButtonEasterEggClicked() {

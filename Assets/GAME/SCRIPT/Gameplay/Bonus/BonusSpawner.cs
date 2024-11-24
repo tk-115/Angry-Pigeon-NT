@@ -4,22 +4,18 @@ using Zenject;
 
 [RequireComponent(typeof(Animator))]
 public class BonusSpawner : MonoBehaviour {
-
     private Animator _animator; 
     [SerializeField] private Transform _spawnPoint;
-
     [SerializeField] private List<Transform> _coinsSpawnPoints;
 
     [Inject] private BonusFactory _bonusFactory;
 
     private Bonus _spawnedBonus;
-
     private List<BonusCoin> _spawnedCoins;
 
     private void Awake() { _animator = GetComponent<Animator>(); }
 
     public void SpawnBonus() {
-
         //Спавним раномный бонус
         int bonusId = Random.Range(0, 120);
         if (bonusId < 30) _spawnedBonus = _bonusFactory.Get<BonusFullHP>();

@@ -9,7 +9,7 @@ public class Vorona : MonoBehaviour {
     private const int END_FLY_POSITION_X_OFFSET = 3;
     private const float FLY_FORCE = -.25f;
 
-    public Action OnVoronaFlyedEvent;
+    public event Action OnVoronaFlyedEvent;
 
     [Inject] private ScoresControll _scoresControll;
 

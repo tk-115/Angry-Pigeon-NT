@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 using Zenject;
 
 public class BonusFactory {
-
     private const string BONUS_CONFIG = "AllBonusesCfg";
-
     private BonusConfig _blockConfig;
-
     private IInstantiator _container;
 
     public BonusFactory(IInstantiator container) {
@@ -29,8 +21,5 @@ public class BonusFactory {
         return null;
     }
 
-    private void Load() {
-        _blockConfig = Resources.Load<BonusConfig>(BONUS_CONFIG);
-    }
+    private void Load() => _blockConfig = Resources.Load<BonusConfig>(BONUS_CONFIG);
 }
-

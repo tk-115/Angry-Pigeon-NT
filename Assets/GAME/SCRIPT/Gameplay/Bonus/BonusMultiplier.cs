@@ -6,8 +6,6 @@ public class BonusMultiplier : Bonus {
     private int _durationOfWork = 15;
     [SerializeField] private SpriteRenderer _bonusView;
 
-    private PigeonMain _pigeonMain;
-
     [Inject] private GameplayView _gameplayView;
     [Inject] private ScoresControll _scoresControll;
 
@@ -21,7 +19,6 @@ public class BonusMultiplier : Bonus {
         transform.SetParent(null);
         //Отключаем его View
         _bonusView.enabled = false;
-        _pigeonMain = pigeonMain;
         //sfx
         _gameplayView.NewBonusSFXPlay();
         //Запускаем логику работы бонуса
@@ -45,8 +42,6 @@ public class BonusMultiplier : Bonus {
         //Убрать привелегии бонуса
         _scoresControll.SetMultiplierDefault();
         _gameplayView.ClearCurrentBonusIcon();
-
-        //Удаляем бонус со сцены
         Destroy(gameObject);
     }
 }

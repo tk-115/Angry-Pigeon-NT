@@ -5,13 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class TripleBombUnit : MonoBehaviour {
     private const float DISABLE_AFTER = 3f;
+
     [SerializeField] private float _power, _angle;
+    [SerializeField] private DefaultBombView _bombView;
+    [SerializeField, Range(0f, 1f)] private float _damage;
 
     private Rigidbody2D _rigidbody;
     private Transform _parent;
-
-    [SerializeField] private DefaultBombView _bombView;
-    [SerializeField, Range(0f, 1f)] private float _damage;
     private bool _isCollided = false;
 
     private Coroutine _deactivateBombsCoroutine;

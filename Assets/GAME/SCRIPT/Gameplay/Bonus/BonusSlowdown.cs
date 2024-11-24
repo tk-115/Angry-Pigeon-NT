@@ -4,8 +4,6 @@ using Zenject;
 public class BonusSlowdown : Bonus {
     [SerializeField] private SpriteRenderer _bonusView;
 
-    private PigeonMain _pigeonMain;
-
     [Inject] private GameplayView _gameplayView;
     [Inject] private LevelGenerator _levelGenerator;
 
@@ -19,7 +17,6 @@ public class BonusSlowdown : Bonus {
         transform.SetParent(null);
         //Отключаем его View
         _bonusView.enabled = false;
-        _pigeonMain = pigeonMain;
         //sfx
         _gameplayView.NewBonusSFXPlay();
         //Запускаем логику работы бонуса

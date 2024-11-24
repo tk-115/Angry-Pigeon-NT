@@ -13,9 +13,8 @@ public class PigeonFactory {
     }
 
     public PigeonMain GetPigeon(int pigeonID, Vector3 spawnPoint) {
-        PigeonMain pigeon = _container.InstantiatePrefabForComponent<PigeonMain>(_pigeonConfig.PigeonPrefabs[pigeonID].PigeonMain, spawnPoint, Quaternion.identity, null);
-
-        //= GameObject.Instantiate(_pigeonConfig.PigeonPrefabs[pigeonID].PigeonMain, spawnPoint, Quaternion.identity);
+        PigeonMain pigeon = _container.InstantiatePrefabForComponent<PigeonMain>
+            (_pigeonConfig.PigeonPrefabs[pigeonID].PigeonMain, spawnPoint, Quaternion.identity, null);
         pigeon.Bomber.Initialize(_pigeonConfig.PigeonPrefabs[pigeonID].AvailableBomb);
         return pigeon;
     }

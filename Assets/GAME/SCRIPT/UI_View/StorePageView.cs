@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
@@ -40,6 +37,4 @@ public class StorePageView : MonoBehaviour {
     public void OnButtonBackFromStoreClicked() => OnButtonBackFromStoreClickEvent?.Invoke();
 
     public void OnButtonSkinClicked(int skinid) => OnButtonSkinClickEvent?.Invoke(skinid);
-
 }
-

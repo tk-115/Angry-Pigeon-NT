@@ -10,9 +10,9 @@ public class PigeonStateMachine : IStateSwicher {
 
         _allStates = new List<IState>() {
             new PigeonIDLEState(pigeon.View),
-            new PigeonFlyingState(this, pigeon, gameplayView),
+            new PigeonFlyingState(pigeon, gameplayView),
             new PigeonTakingDamageState(this, pigeon.View),
-            new PigeonDiedState(this, pigeon.View, rigidbody)
+            new PigeonDiedState(pigeon.View, rigidbody)
         };
 
         _currentState = _allStates[0];
@@ -27,10 +27,6 @@ public class PigeonStateMachine : IStateSwicher {
         _currentState.Exit();
         _currentState = state;
         _currentState.Enter();
-    }
-
-    public bool CurrentStateIs<T>() where T : IState {
-        if (_currentState is T) return true; else return false;
     }
 
     public void Update() => _currentState.Update();

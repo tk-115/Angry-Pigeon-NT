@@ -18045,6 +18045,7 @@ MonoBehaviour:
   _voronaAlertClip: {fileID: 8300000, guid: 569771c0caabcd042ae50600df596a0b, type: 3}
   _newBonusApplyClip: {fileID: 8300000, guid: 4b533c20b35412c49aa4af7ad2ac75a9, type: 3}
   _coinPickedUpClip: {fileID: 8300000, guid: 9d967554a1c1d8d409b384f96d43b39a, type: 3}
+  _pauseEnterClip: {fileID: 8300000, guid: 001ed1b806aa57049ab42a56d5d4c35e, type: 3}
 --- !u!95 &8075067012601852507
 Animator:
   serializedVersion: 5

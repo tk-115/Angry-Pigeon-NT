@@ -8,15 +8,13 @@ public class PigeonFlyingState : IState {
     public event Action OnButtonControllDOWNClickEvent;
     public event Action OnButtonControllBOMBClickEvent;
 
-    private IStateSwicher _stateSwither;
     private PigeonMain _pigeonMain;
     private GameplayView _gameplayView;
 
     private float _inputFlyControl;
     private float _timerBombCoolDown;
 
-    public PigeonFlyingState(IStateSwicher stateSwither, PigeonMain pigeonMain, GameplayView gameplayView) {
-        _stateSwither = stateSwither;
+    public PigeonFlyingState(PigeonMain pigeonMain, GameplayView gameplayView) {
         _pigeonMain = pigeonMain;
         _gameplayView = gameplayView;
     }

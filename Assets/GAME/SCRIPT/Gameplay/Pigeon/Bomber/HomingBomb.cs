@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class HomingBomb : Bomb {
@@ -14,7 +9,6 @@ public class HomingBomb : Bomb {
 
     [SerializeField] private DefaultBombView _bombView;
     [SerializeField, Range(0f, 1f)] private float _damage;
-
     [SerializeField] private float _homingRadius;
     [SerializeField] private float _explosionRadius;
     [SerializeField] private LayerMask _layerMask;
@@ -112,6 +106,3 @@ public class HomingBomb : Bomb {
         _bombView.DisplayCollide();
     }
 }
-
-
-

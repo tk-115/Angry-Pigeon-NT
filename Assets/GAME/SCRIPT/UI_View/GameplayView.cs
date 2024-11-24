@@ -43,15 +43,14 @@ public class GameplayView : MonoBehaviour {
     [SerializeField] private AudioClip _voronaAlertClip;
     [SerializeField] private AudioClip _newBonusApplyClip;
     [SerializeField] private AudioClip _coinPickedUpClip;
+    [SerializeField] private AudioClip _pauseEnterClip;
 
     private Color DEFAULT_SPRITE_COLOR = new Color(255, 255, 255, 255);
     private Color TRANSPARENT_SPRITE_COLOR = new Color(255, 255, 255, 0);
     private AudioSource _audioSource;
-
     private Animator _animator;
 
     public LanguageControll LanguageControll => _languageControll;
-
 
     public void Initialize() {
         _animator = GetComponent<Animator>();
@@ -123,7 +122,10 @@ public class GameplayView : MonoBehaviour {
     //Pause
     public void ShowPausePage() => _animator.Play("PausePageShow");
 
-    public void OnPauseShowComplete() => OnButtonPauseClickEvent?.Invoke();
+    public void OnPauseShowComplete() {
+        _audioSource.PlayOneShot(_pauseEnterClip);
+        OnButtonPauseClickEvent?.Invoke();
+    }
 
     public void HidePausePage() => _animator.Play("PausePageHide");
     #endregion

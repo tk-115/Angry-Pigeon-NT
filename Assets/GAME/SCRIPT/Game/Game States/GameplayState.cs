@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class GameplayState : IState {
-    private IStateSwicher _switcher;
+    private GameStateMachine _switcher;
     private LevelGenerator _levelGenerator;
     private PigeonSpawner _pigeonSpawner;
     private PlayerData _playerData;
@@ -12,9 +12,10 @@ public class GameplayState : IState {
     private GameplayStateMachine _gameplayStateMachine;
     private PigeonMain _pigeonMain;
 
-    public GameplayState(IStateSwicher switcher, LevelGenerator levelGenerator, 
+    public GameplayState(GameStateMachine switcher, LevelGenerator levelGenerator, 
         PigeonSpawner pigeonSpawner, PlayerData playerData,
         GameplayView gameplayView, ScoresControll scoresControll, AdsManager adsManager) {
+
         _switcher = switcher;
         _levelGenerator = levelGenerator;
         _pigeonSpawner = pigeonSpawner;
@@ -55,5 +56,5 @@ public class GameplayState : IState {
         GameObject.Destroy(_pigeonMain.gameObject);
     }
 
-    public void Update() { }
+    public void Update() => _gameplayStateMachine.Update();
 }

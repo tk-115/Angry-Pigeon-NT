@@ -1,6 +1,3 @@
-using UnityEngine;
-using Zenject;
-
 public class GameOverState : IState {
     private IStateSwicher _stateSwicher;
     private GameplayView _gameplayView;
@@ -82,7 +79,7 @@ public class GameOverState : IState {
         _gameplayView.OnButtonInMainMenuClickEvent -= OnButtonToMainMenuClicked;
         _gameplayView.OnButtonResurrectionClickEvent -= OnButtonResurrectionClicked;
 
-        //save records
+        _scoresControll.SaveRecords();
 
         _gameStateSwitcher.SwitchState<MainMenuState>();
     }

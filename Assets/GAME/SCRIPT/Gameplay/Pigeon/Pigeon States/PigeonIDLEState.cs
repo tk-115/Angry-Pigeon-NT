@@ -1,5 +1,4 @@
-﻿
-public class PigeonIDLEState : IState {
+﻿public class PigeonIDLEState : IState {
     private PigeonView _pigeonView;
 
     public PigeonIDLEState(PigeonView pigeonView) {
@@ -12,4 +11,3 @@ public class PigeonIDLEState : IState {
 
     public void Update() { }
 }
-

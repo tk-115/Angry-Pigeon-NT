@@ -7,6 +7,7 @@ public class LevelPool : MonoBehaviour {
     public const int EACH_BLOCK_POOL_AMOUNT = 4;
 
     [Inject] private BlockFactory _blockFactory;
+
     private List<Block> _pooledBlocks;
     private int _uniqueBlocksCount;
 

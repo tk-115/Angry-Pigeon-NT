@@ -1,7 +1,3 @@
-using System;
-using Unity.VisualScripting;
-using UnityEngine;
-
 public class GameplayMainState : IState {
 
     private IStateSwicher _stateSwicher;
@@ -15,15 +11,11 @@ public class GameplayMainState : IState {
     }
 
     public void Enter() {
-        //Позволить голубю летать
         _pigeonMain.StateMachine.SwitchState<PigeonFlyingState>();
-
         _gameplayView.OnButtonPauseClickEvent += OnButtonPlayClicked;
     }
 
-    public void Exit() {
-
-    }
+    public void Exit() => _gameplayView.OnButtonPauseClickEvent -= OnButtonPlayClicked;
 
     public void Update() { }
 

@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 
 public abstract class Bonus : MonoBehaviour {
+    public bool IsPickedUp => _isPickedUp;
+    public Sprite HUDIcon;
+    public abstract void Apply(IPickable bonusPicker);
+    public abstract void Execute(PigeonMain pigeonMain);    
+    public abstract void Shutdown();
 
     private bool _isPickedUp = false;
-
-    public bool IsPickedUp => _isPickedUp;
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (_isPickedUp == true) return;
@@ -14,10 +17,4 @@ public abstract class Bonus : MonoBehaviour {
             _isPickedUp = true;
         }
     }
-
-    public Sprite HUDIcon;
-
-    public abstract void Apply(IPickable bonusPicker);
-    public abstract void Execute(PigeonMain pigeonMain);    //Каждый бонус один хуй может сработать только на голубе иди нахуй
-    public abstract void Shutdown();
 }

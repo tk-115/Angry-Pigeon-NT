@@ -55,7 +55,7 @@ public class Projectile : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (_hited) return;
+        if (_hited == true) return;
 
         if (collision.transform.TryGetComponent(out IDamageble damageble)) damageble.TakeDamage(_damage);
         

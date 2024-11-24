@@ -10,4 +10,3 @@ public class PigeonSpawner : MonoBehaviour {
         return _pigeonFactory.GetPigeon(pigeonID, SpawnPoint.position);
     }
 }
-

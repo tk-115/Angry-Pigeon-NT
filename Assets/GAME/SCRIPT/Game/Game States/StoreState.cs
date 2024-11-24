@@ -79,7 +79,6 @@
             _playerData.SelectedPigeonID = skinid;
             _playerData.SaveData();
         }
-        //если нет ниче не делаем
     }
     
     void IState.Update() { }

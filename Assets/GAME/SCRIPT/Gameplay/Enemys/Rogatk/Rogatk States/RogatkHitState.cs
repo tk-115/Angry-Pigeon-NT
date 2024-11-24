@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RogatkHitState : IState {
     private const float HIT_COOLDOWN = .4f;

@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class PigeonTakingDamageState : IState
-{
+public class PigeonTakingDamageState : IState {
     private const float TAKING_DAMAGE_COOLDOWN = .2f;
 
     private IStateSwicher _stateSwither;

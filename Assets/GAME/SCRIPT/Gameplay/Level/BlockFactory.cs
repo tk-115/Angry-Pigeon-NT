@@ -1,22 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
 using Zenject;
 
 public class BlockFactory {
-
     private const string BLOCKS_CONFIG = "AllBlocksCfg";
 
     private BlockConfig _blockConfig;
     private IInstantiator _container;
     private int _blockFromConfigCount;
 
-    public int BlocksFromConfigCount => _blockFromConfigCount;
-
     public BlockFactory(IInstantiator container) {
         _container = container;
         Load();
     }
+
+    public int BlocksFromConfigCount => _blockFromConfigCount;
 
     public Block[] GetInitializedBlocks(int eachBlockAmount) {
         List<Block> initializedBlocks = new List<Block>();
@@ -55,7 +53,5 @@ public class BlockFactory {
         return initializedBlocks.ToArray();
     }
 
-    private void Load() {
-        _blockConfig = Resources.Load<BlockConfig>(BLOCKS_CONFIG);
-    }
+    private void Load() => _blockConfig = Resources.Load<BlockConfig>(BLOCKS_CONFIG);
 }

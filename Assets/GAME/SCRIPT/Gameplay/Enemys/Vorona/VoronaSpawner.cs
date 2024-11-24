@@ -12,13 +12,13 @@ public class VoronaSpawner : MonoBehaviour {
     [SerializeField] private Vorona _voronaPrefab;
 
     private class VoronaSpawnPoint {
+        public Vector3 VoronaSpawnPosition;
+        public Vector3 AlertUIPosition;
+
         public VoronaSpawnPoint(Vector3 voronaSpawnPoint, Vector3 alertUIposition) {
             VoronaSpawnPosition = voronaSpawnPoint;
             AlertUIPosition = alertUIposition;
         }
-
-        public Vector3 VoronaSpawnPosition;
-        public Vector3 AlertUIPosition;
     }
 
     private int _spawnProbability = 35;    

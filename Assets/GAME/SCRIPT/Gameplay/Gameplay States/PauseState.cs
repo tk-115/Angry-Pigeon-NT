@@ -1,22 +1,21 @@
 using UnityEngine;
-using Zenject;
 
 public class PauseState : IState {
     private IStateSwicher _stateSwicher;
     private PigeonMain _pigeonMain;
     private GameplayView _gameplayView;
-    private IStateSwicher _upperSwitcher;
+    private GameStateMachine _gameStateMachine;
     private LevelGenerator _levelGenerator;
     private ScoresControll _scoresControll;
 
-    public PauseState(IStateSwicher stateSwicher, 
-        IStateSwicher upperSwitcher, PigeonMain pigeonMain, GameplayView gameplayView, 
+    public PauseState(IStateSwicher stateSwicher,
+        GameStateMachine gameStateMachine, PigeonMain pigeonMain, GameplayView gameplayView, 
         LevelGenerator levelGenerator, ScoresControll scoresControll) {
 
         _stateSwicher = stateSwicher;
         _pigeonMain = pigeonMain;
         _gameplayView = gameplayView;
-        _upperSwitcher = upperSwitcher;
+        _gameStateMachine = gameStateMachine;
         _levelGenerator = levelGenerator;
         _scoresControll = scoresControll;
     }
@@ -47,7 +46,7 @@ public class PauseState : IState {
         _gameplayView.OnButtonInMainMenuClickEvent -= OnButtonToMainMenuClicked;
         
         _scoresControll.SaveRecords();
-        _upperSwitcher.SwitchState<MainMenuState>();
+        _gameStateMachine.SwitchState<MainMenuState>();
     }
 
     public void Exit() {
@@ -58,7 +57,5 @@ public class PauseState : IState {
         _gameplayView.HidePausePage();
     }
 
-    void IState.Update() {
-        //Обработка клавиш - отмена паузы, перемещение по пунктам меню
-    }
+    void IState.Update() { }
 }

@@ -1,12 +1,10 @@
 using UnityEngine;
 
 public class PigeonDiedState : IState {
-    private IStateSwicher _stateSwither;
     private PigeonView _pigeonView;
     private Rigidbody2D _rigidbody;
 
-    public PigeonDiedState(IStateSwicher stateSwither, PigeonView pigeonView, Rigidbody2D rigidbody) {
-        _stateSwither = stateSwither;
+    public PigeonDiedState(PigeonView pigeonView, Rigidbody2D rigidbody) {
         _pigeonView = pigeonView;
         _rigidbody = rigidbody;
     }

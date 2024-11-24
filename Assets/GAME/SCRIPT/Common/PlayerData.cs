@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -64,5 +63,4 @@ public class PlayerData : MonoBehaviour {
 
         PlayerPrefs.Save();
     }
-
 }

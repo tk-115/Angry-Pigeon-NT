@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rogatk))]
@@ -65,4 +64,3 @@ public class RogatkShooter : MonoBehaviour {
         }
     }
 }
-

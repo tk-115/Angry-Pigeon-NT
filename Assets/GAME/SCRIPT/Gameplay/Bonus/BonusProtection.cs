@@ -5,12 +5,10 @@ using Zenject;
 public class BonusProtection : Bonus {
     private int _durationOfWork = 12;
     [SerializeField] private SpriteRenderer _bonusView;
-
     private PigeonMain _pigeonMain;
+    private Coroutine _bonusCoroutine;
 
     [Inject] private GameplayView _gameplayView;
-
-    private Coroutine _bonusCoroutine;
 
     public override void Apply(IPickable bonusPicker) => bonusPicker.Apply(this);
 
@@ -46,8 +44,6 @@ public class BonusProtection : Bonus {
         _pigeonMain.DamageProcessor.IsInvulnerable = false;
         _gameplayView.ClearCurrentBonusIcon();
         _pigeonMain.View.SetActiveProtectionSphere(false);
-
-        //Удаляем бонус со сцены
         Destroy(gameObject);
     }
 }
