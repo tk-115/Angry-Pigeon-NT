@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 public class PigeonFlyingState : IState {
-    private const float FLIGHT_RESPONSIVENESS = .3f;
+    private const float FLIGHT_RESPONSIVENESS = .1f;
 
     public event Action OnButtonControllUPClickEvent;
     public event Action OnButtonControllDOWNClickEvent;
@@ -56,6 +56,14 @@ public class PigeonFlyingState : IState {
     }
 
     public void Update() {
+        //pc controll add in v7
+        if (Input.GetKeyDown(KeyCode.UpArrow)) OnButtonControllUPClicked();
+        if (Input.GetKeyDown(KeyCode.DownArrow)) OnButtonControllDOWNClicked();
+        if (Input.GetKeyDown(KeyCode.Space)) OnButtonControllBOMBClicked();
+
+        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) 
+            || Input.GetKeyUp(KeyCode.Space)) _inputFlyControl = 0;
+
         if (_inputFlyControl < 0 || _inputFlyControl > 0)
             _pigeonMain.Rigidbody.AddForce(new Vector2(0, _inputFlyControl * FLIGHT_RESPONSIVENESS), ForceMode2D.Impulse);
 
