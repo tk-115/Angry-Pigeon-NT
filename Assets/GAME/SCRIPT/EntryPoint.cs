@@ -39,7 +39,7 @@ public class EntryPoint : MonoBehaviour {
         _gameStateMachine = new GameStateMachine(this);
     }
 
-    private void FixedUpdate() {
+    private void Update() {
         _gameStateMachine.Update();
     }
 }

@@ -43,7 +43,7 @@ public class PigeonMain : MonoBehaviour {
         _stateMachine.SwitchState<PigeonFlyingState>();
     }
     
-    private void Update() { if (_stateMachine != null) _stateMachine.Update(); }
+    private void FixedUpdate() { if (_stateMachine != null) _stateMachine.Update(); }
 
     private void OnTakingDamage(float amount) => _stateMachine.SwitchState<PigeonTakingDamageState>();
 
