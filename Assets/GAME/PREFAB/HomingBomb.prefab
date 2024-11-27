@@ -113,7 +113,7 @@ MonoBehaviour:
   _bombView: {fileID: 293812941970858062}
   _damage: 1
   _homingRadius: 6
-  _explosionRadius: 3
+  _explosionRadius: 3.5
   _layerMask:
     serializedVersion: 2
     m_Bits: 128

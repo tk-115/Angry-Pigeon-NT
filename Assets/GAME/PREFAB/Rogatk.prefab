@@ -263,9 +263,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7344723230522437533}
-  - component: {fileID: 6778327672130260491}
-  - component: {fileID: 1989227927317885893}
+  - component: {fileID: 5184057310908163028}
   - component: {fileID: 1523219897286775496}
+  - component: {fileID: 1989227927317885893}
   - component: {fileID: 8283278283871124387}
   m_Layer: 7
   m_Name: Rogatk
@@ -291,13 +291,15 @@ Transform:
   - {fileID: 7533471156659922469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6778327672130260491
-BoxCollider:
+--- !u!61 &5184057310908163028
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9187500269618028711}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -306,12 +308,47 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02054426, y: 0.3092807}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.43062973, y: 0.67352426}
+  m_EdgeRadius: 0
+--- !u!114 &1523219897286775496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9187500269618028711}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.40030432, y: 0.67947286, z: 1}
-  m_Center: {x: 0.031018734, y: 0.3188037, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a1c70f47d0aab4d80fd4e615c5f237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 1
 --- !u!114 &1989227927317885893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,19 +363,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectilePrefab: {fileID: 3443975128925403359, guid: 2d980d9235a390249a951cef5d118f79, type: 3}
   _spawnPoint: {fileID: 7533471156659922469}
---- !u!114 &1523219897286775496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9187500269618028711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7a1c70f47d0aab4d80fd4e615c5f237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHealth: 1
 --- !u!114 &8283278283871124387
 MonoBehaviour:
   m_ObjectHideFlags: 0

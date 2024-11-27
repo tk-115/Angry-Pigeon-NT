@@ -38,7 +38,7 @@ public class MainMenuState : IState {
         //Включить или выключить звук
         if (_playerData.Settings_SFX == SOUND_ENABLED) {
             _sfxEnabled = true;
-            _mixer.SetFloat("MusicVolume", Mathf.Log10(SOUND_ENABLED) * 20);
+            _mixer.SetFloat("SFXVolume", Mathf.Log10(SOUND_ENABLED) * 20);
         } else { 
             _sfxEnabled = false;
             _mixer.SetFloat("SFXVolume", Mathf.Log10(SOUND_DISABLED) * 20);
@@ -50,6 +50,7 @@ public class MainMenuState : IState {
             _musicEnabled = false;
             _mixer.SetFloat("MusicVolume", Mathf.Log10(SOUND_DISABLED) * 20);
         }
+
         //Применить значения в view главного меню
         _mainMenuView.SetSFXTumbler(_sfxEnabled);
         _mainMenuView.SetMusicTumbler(_musicEnabled);
@@ -93,12 +94,11 @@ public class MainMenuState : IState {
         if (_sfxEnabled == true) {
             _mixer.SetFloat("SFXVolume", Mathf.Log10(SOUND_ENABLED) * 20);
             _playerData.Settings_SFX = SOUND_ENABLED;
-            _playerData.SaveData();
         } else {
             _mixer.SetFloat("SFXVolume", Mathf.Log10(SOUND_DISABLED) * 20);
             _playerData.Settings_SFX = SOUND_DISABLED;
-            _playerData.SaveData();
         }
+        _playerData.SaveData();
         _mainMenuView.SetSFXTumbler(_sfxEnabled);
     }
 
@@ -108,12 +108,11 @@ public class MainMenuState : IState {
         if (_musicEnabled == true) {
             _mixer.SetFloat("MusicVolume", Mathf.Log10(SOUND_ENABLED) * 20);
             _playerData.Settings_Music = SOUND_ENABLED;
-            _playerData.SaveData();
         } else {
             _mixer.SetFloat("MusicVolume", Mathf.Log10(SOUND_DISABLED) * 20);
             _playerData.Settings_Music = SOUND_DISABLED;
-            _playerData.SaveData();
         }
+        _playerData.SaveData();
         _mainMenuView.SetMusicTumbler(_musicEnabled);
     }
 

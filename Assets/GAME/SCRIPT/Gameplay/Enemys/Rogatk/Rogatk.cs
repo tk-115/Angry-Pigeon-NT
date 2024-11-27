@@ -41,6 +41,7 @@ public class Rogatk : MonoBehaviour {
     }
 
     private void OnDie() {
+        Debug.Log(name + " OnDie execute");
         _scoresControll.AddScore(ForDeadScores);
         _rogatkStateMachine.SwitchState<RogatkDeadState>();
     }

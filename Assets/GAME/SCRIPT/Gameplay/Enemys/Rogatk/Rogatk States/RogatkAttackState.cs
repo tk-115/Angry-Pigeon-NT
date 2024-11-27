@@ -12,7 +12,7 @@
     }
 
     public void Exit() => _rogatkView.DisplayAttack(false);
-
+    
     public void Update() { }
 }
 

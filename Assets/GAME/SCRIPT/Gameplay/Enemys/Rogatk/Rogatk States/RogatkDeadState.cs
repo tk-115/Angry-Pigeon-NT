@@ -13,6 +13,6 @@
     }
 
     public void Exit() => _rogatkMain.RogatkView.DisplayDead(false);
-
+    
     public void Update() { }
 }
