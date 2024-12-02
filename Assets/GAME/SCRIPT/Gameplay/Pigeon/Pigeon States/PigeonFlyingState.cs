@@ -56,12 +56,6 @@ public class PigeonFlyingState : IState {
     }
 
     public void Update() {
-        //pc controll for debug
-        //if (Input.GetKeyDown(KeyCode.UpArrow)) OnButtonControllUPClicked();
-        //if (Input.GetKeyDown(KeyCode.DownArrow)) OnButtonControllDOWNClicked();
-        //if (Input.GetKeyDown(KeyCode.Space)) OnButtonControllBOMBClicked();
-        //if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow)) _inputFlyControl = 0;
-
         if (_inputFlyControl < 0 || _inputFlyControl > 0)
             _pigeonMain.Rigidbody.AddForce(new Vector2(0, _inputFlyControl * FLIGHT_RESPONSIVENESS), ForceMode2D.Impulse);
 

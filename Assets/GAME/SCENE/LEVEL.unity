@@ -16421,9 +16421,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf439db145d46b4999e9a5b530d75fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 4000
-  Meters: 6000
-  Coins: 420
+  Score: 1000
+  Meters: 200
+  Coins: 70
   NeedScoreText: {fileID: 5548547639418185189}
   NeedMetersText: {fileID: 7451155399509911898}
   NeedCoinsText: {fileID: 7747223996132476389}
@@ -16459,9 +16459,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf439db145d46b4999e9a5b530d75fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 10000
-  Meters: 10000
-  Coins: 777
+  Score: 2500
+  Meters: 350
+  Coins: 150
   NeedScoreText: {fileID: 5548547639385595469}
   NeedMetersText: {fileID: 7451155399479579378}
   NeedCoinsText: {fileID: 7747223996166880845}
@@ -16497,9 +16497,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf439db145d46b4999e9a5b530d75fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1500
-  Meters: 2400
-  Coins: 170
+  Score: 200
+  Meters: 100
+  Coins: 50
   NeedScoreText: {fileID: 5548547640092398220}
   NeedMetersText: {fileID: 7451155401016729139}
   NeedCoinsText: {fileID: 7747223997343576716}
