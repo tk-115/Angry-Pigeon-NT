@@ -1,7 +1,7 @@
 # Angry-Pigeon-NT
 A small mobile game about pigeon who love bombarding civilians. Version with store and further support
 
-Оболочка игры работает при помощи паттерна состояние. Вего GameStates 3 - главное меню, магазин и геймлпей
+Оболочка игры работает при помощи паттерна состояние. Всего GameStates 3 - главное меню, магазин и геймлпей
 ![1](https://github.com/user-attachments/assets/5f5d2bc3-daea-44c9-b9db-85cdbadc3cf2)
 В главном меню можно включить/выключить SFX и музыку, изменить язык, видеть рекорд очков, пролеченных метров и собранных монет.
 
